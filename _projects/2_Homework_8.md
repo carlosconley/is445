@@ -19,6 +19,8 @@ custom_js:
 
 
 ## Plot 2
+
+Drag for interactivity!
 <vegachart schema-url="{{ site.baseurl }}/assets/json/cook_sizes.json" style="width: 100%"></vegachart>
 
 
