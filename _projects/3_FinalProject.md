@@ -12,6 +12,7 @@ custom_js:
 
 # Poor driving conditions can increase car crash severity
 
+Author: Carlos Conley
 We learn in driver's education that rain and snow can increase our likelihood for crashes. The same is said for driving at elevated speeds and at night. However, does this mean that the severity of crashes increases under these conditions? Using a subset of car crashes recorded in Chicago's surrounding downtown area, we can see trends that are applicable to similar urban areas.
 
 Have a go at poking around the data to some trends for yourself! You can drag and scroll on the plot of daily crashes to filter the data and double click to clear your filter.
@@ -43,13 +44,12 @@ While Chicago drivers may be discourage by the above data, fearing that their ro
 
 ### Conclusion
 
-
-
-
-
+Overall, we can see that driving under safer conditions can decrease the likelihood of getting into a severe car accident. During times of poor lighting or weather, it is important to drive a little more slowly that you normally do an be extra vigilant to avoid accidents. This may save you or your passengers!
 
 ## Design Choices
+I chose a dashboard design for my graphs to allow the user to play around with the data and see how many different fields are correlated. Added the timeline so that users can play around and get more specific with the data they are looking at, while not giving them too complicated of a UI that it may get confusing. My normalized subplots focused around the damage variable to help users see the trends related to damage (aka crash severity) in many different cases. I normalized the values so that more common crash scenarios (ie clear weather, daylight, etc) didn't bias the data and wash out the other data points.
 
+Finally, the histogram comparing injury severity and posted speed limits was chosen to see how these findings can be used not just for car damage, but also how severe injuries can be from these accidents. I made sure that the injury categories were sorted in the order of most to least severe, as they weren't sorted like that by default.
 
 
 ## Methodologies
