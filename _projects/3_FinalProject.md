@@ -49,6 +49,8 @@ Overall, we can see that driving under safer conditions can decrease the likelih
 ## Design Choices
 I chose a dashboard design for my graphs to allow the user to play around with the data and see how many different fields are correlated. Added the timeline so that users can play around and get more specific with the data they are looking at, while not giving them too complicated of a UI that it may get confusing. My normalized subplots focused around the damage variable to help users see the trends related to damage (aka crash severity) in many different cases. I normalized the values so that more common crash scenarios (ie clear weather, daylight, etc) didn't bias the data and wash out the other data points.
 
+For the selection view histogram, I decided to include the hour of the start of the bin in the label, not just the date. This was because the user could select a time slice small enough to have the bins span only a few hours, so I thought it would be more clear to also display times along with dates.
+
 Finally, the histogram comparing injury severity and posted speed limits was chosen to see how these findings can be used not just for car damage, but also how severe injuries can be from these accidents. I made sure that the injury categories were sorted in the order of most to least severe, as they weren't sorted like that by default.
 
 
